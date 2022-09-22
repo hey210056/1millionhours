@@ -1,0 +1,368 @@
+@import url(./reset.css);
+
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+    background-color: #5B2386;
+    text-align: center;
+    font: inherit;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+body {
+    position: relative;
+}
+
+.blind {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%); 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+}
+
+#id {
+    position: relative;
+    z-index: 20;
+}
+
+.img_title {
+    width: 564px;
+    height: 112px;
+    margin: 0 auto;
+    margin-top: 14rem;
+    margin-bottom: 5rem;
+    z-index: 10;
+    position: relative;
+}
+
+.img_clock {
+    width: 221.6px;
+    height: 225px;
+    position: absolute;
+    left: 50%;
+    top: 15.5%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+
+#main {
+    position: relative;
+}
+
+#main .onemillion_check {
+    margin-bottom: 3rem;
+}
+
+#main .onemillion_check h2 {
+    color: #F5DF4D;
+    width: 486px;
+    height: 40px;
+    margin: 3rem auto;
+    padding-bottom: 2rem;
+    position: relative;
+    font-family: 'OTEnjoystoriesBA';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.img_quotes {
+    /*position absolute 주면 main relative를 따를 줄 알았는데..이상한 곳에 위치 된다..
+    left의 initial value때문에! 그렇다 auto로 지정되어있다*/
+    /* position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.text_desc {
+    width: 373px;
+    height: 85px;
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2.1;
+    text-align: center;
+    color: #FFFFFF;
+    margin: -3.5rem auto 7rem auto;
+}
+
+.title_desc {
+    /*strong tag가 안먹는 이유는? 폰트 내에 bold를 따로 안?만들어서*/
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.contents_input {
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    margin-top: 3rem;
+    color: #FFFFFF;
+}
+
+.text_wannabe {
+    width: 514px;
+    height: 57px;
+    margin: 0 auto 2rem auto;
+}
+
+.text_times {
+    width: 765px;
+    height: 57px;
+    margin: 0 auto;
+}
+
+#want_experts {
+    box-sizing: border-box;
+    width: 228px;
+    height: 57px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+
+#want_hours {
+    box-sizing: border-box;
+    width: 228px;
+    height: 57px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+
+#want_experts::placeholder, #want_hours::placeholder {
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    color: #BABCBE;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.measure_hours {
+    margin: 6rem 0;
+    width: 565px;
+    height: 66px;
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 56px;
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #5B2386;
+}
+
+.click_img {
+    margin-right: -4.5rem;
+    margin-bottom: -3rem;
+}
+
+.text_if_wannabe {
+    width: 663px;
+    height: 72px;
+    margin: 0 auto;
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    color: #FFFFFF;
+    padding-bottom: 1rem;
+}
+
+.text_if_wannabe #experts::after {
+    content: "프로그래밍";
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.text_if_times {
+    width: 541px;
+    height: 72px;
+    margin: 0 auto;
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+}
+
+.text_if_times #days::after {
+    content: "5110";
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.modal_btn {
+    width: 356px;
+    height: 66px;
+    border: solid #FCEE21;
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color:#5B2386;
+}
+
+.share_link {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 191px;
+    height: 66px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: solid #fff;
+    border-radius: 56px;
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color:#5B2386;
+    vertical-align: middle;
+    padding-top: 14.5px;
+}
+
+#result {
+    margin-bottom: 10rem;
+}
+
+    #footer {
+        position: relative;
+    }
+
+.weniv {
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.small {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 800px;
+    height: 800px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.txt_gogo {
+    margin-top: 76px;
+    font-family: 'tvN Enjoystories';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 106px;
+    color: #5B2386;
+}
+
+.txt_dream {
+    font-family: 'tvN Enjoystories';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #5B2386;
+}
+
+.licat {
+    display: block;
+    margin: 0 auto 4rem auto;
+}
+
+.btn_to_go {
+    width: 508px;
+    height: 66px;
+    border: solid #FCEE21;
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    font-family: 'GmarketSansBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #5B2386;
+}
